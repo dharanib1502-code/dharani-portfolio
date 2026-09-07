@@ -342,11 +342,6 @@ transform:translateY(-6px);
     z-index:2;
 }
 
-.journey-item h3{
-    font-size:22px;
-    margin-bottom:8px;
-}
-
 .journey-item p{
     color:var(--muted);
     font-size:14px;
