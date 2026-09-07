@@ -345,5 +345,6 @@ transform:translateY(-6px);
 .journey-item p{
     color:var(--muted);
     font-size:14px;
+    margin:10;
     line-height:1.5;
 }
