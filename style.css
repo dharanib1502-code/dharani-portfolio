@@ -32,3 +32,17 @@ border-color:#8B5CF6;
 box-shadow:
 0 15px 40px rgba(139,92,246,.25);
 }
+.skill-bar{
+height:8px;
+background:#1A2448;
+border-radius:50px;
+}
+
+.skill-fill{
+height:100%;
+background:linear-gradient(
+90deg,
+#8B5CF6,
+#06B6D4
+);
+}
