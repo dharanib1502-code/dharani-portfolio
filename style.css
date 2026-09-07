@@ -569,6 +569,87 @@ transform:translateY(-6px);
 
 }
 
+
+/* RESULTS SECTION */
+
+.results-section{
+    padding:120px 0;
+}
+
+.results-section h2{
+    font-size:56px;
+    margin:10px 0 20px;
+}
+
+.results-desc{
+    max-width:550px;
+    color:var(--muted);
+    line-height:1.8;
+    margin-bottom:50px;
+}
+
+.results-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.result-card{
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:35px 20px;
+    text-align:center;
+    transition:.35s;
+}
+
+.result-card:hover{
+    transform:translateY(-6px);
+    border-color:#8b5cf6;
+    box-shadow:0 0 30px rgba(139,92,246,.18);
+}
+
+.result-card h3{
+    font-size:52px;
+    font-weight:800;
+    color:#58a6ff;
+    margin-bottom:10px;
+}
+
+.result-card p{
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.5;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .results-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .results-section h2{
+        font-size:42px;
+    }
+}
+
+@media(max-width:600px){
+
+    .results-grid{
+        grid-template-columns:1fr;
+    }
+
+    .results-section h2{
+        font-size:34px;
+    }
+
+    .result-card h3{
+        font-size:42px;
+    }
+}
+
 /* SKILLS SECTION */
 
 .skills-layout{
