@@ -248,24 +248,138 @@
 </section>
 
   <!-- SKILLS -->
-  <section class="section">
-    <span class="section-tag">SKILLS</span>
-    <h2>Skills & Tools</h2>
+  <section class="section skills-section">
 
-    <div class="skills">
-      <span>SEO</span>
-      <span>Google Ads</span>
-      <span>Meta Ads</span>
-      <span>GA4</span>
-      <span>GTM</span>
-      <span>Ahrefs</span>
-      <span>SEMrush</span>
-      <span>Apollo.io</span>
-      <span>Customer.io</span>
-      <span>SendGrid</span>
-      <span>WordPress</span>
+    <span class="section-tag">EXPERTISE</span>
+    <h2>Skills & Proficiency</h2>
+
+    <div class="skills-layout">
+
+        <!-- LEFT SIDE -->
+
+        <div class="skills-categories">
+
+            <div class="skill-group">
+                <h4>Advertising Platforms</h4>
+
+                <div class="skill-tags">
+                    <span>Google Ads</span>
+                    <span>Meta Ads</span>
+                    <span>LinkedIn Ads</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h4>Analytics & Tracking</h4>
+
+                <div class="skill-tags">
+                    <span>GA4</span>
+                    <span>Google Tag Manager</span>
+                    <span>Looker Studio</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h4>SEO & Marketing</h4>
+
+                <div class="skill-tags">
+                    <span>Technical SEO</span>
+                    <span>On-Page SEO</span>
+                    <span>Off-Page SEO</span>
+                    <span>Ahrefs</span>
+                    <span>SEMrush</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="proficiency">
+
+            <div class="progress-item">
+                <div class="progress-head">
+                    <span>Google Ads</span>
+                    <span class="counter" data-target="95">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:95%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-head">
+                    <span>Meta Ads</span>
+                    <span class="counter" data-target="92">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:92%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-head">
+                    <span>GA4 + GTM</span>
+                    <span class="counter" data-target="90">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:90%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-head">
+                    <span>SEO</span>
+                    <span class="counter" data-target="95">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:95%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-head">
+                    <span>Email Marketing</span>
+                    <span class="counter" data-target="85">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:85%"></div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-  </section>
+
+</section>
+
+<script>
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+    const target = +counter.dataset.target;
+    let count = 0;
+
+    const updateCounter = () => {
+
+        count += 5;
+
+        if(count >= target){
+            counter.innerText = target + '%';
+        } else {
+            counter.innerText = count + '%';
+            requestAnimationFrame(updateCounter);
+        }
+
+    };
+
+    updateCounter();
+
+});
+
+</script>
 
    <!-- KEY ACHIEVEMENTS -->
   <section class="section">
