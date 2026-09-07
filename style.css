@@ -300,6 +300,90 @@ transition:.3s;
 transform:translateY(-6px);
 }
 
+/* SKILLS */
+/* SKILLS SECTION */
+
+.skills-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    margin-top:50px;
+}
+
+.skill-group{
+    margin-bottom:40px;
+}
+
+.skill-group h4{
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill-tags span{
+    padding:12px 18px;
+    border-radius:50px;
+    border:1px solid rgba(139,92,246,.4);
+    background:rgba(139,92,246,.08);
+    color:#fff;
+    transition:.3s;
+}
+
+.skill-tags span:hover{
+    transform:translateY(-3px);
+    border-color:#8B5CF6;
+}
+
+.progress-item{
+    margin-bottom:25px;
+}
+
+.progress-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.progress-head .counter{
+    color:#22d3ee;
+}
+
+.progress-bar{
+    width:100%;
+    height:8px;
+    background:rgba(255,255,255,.08);
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.progress-bar div{
+    height:100%;
+    border-radius:50px;
+    background:linear-gradient(
+        90deg,
+        #8B5CF6,
+        #06B6D4
+    );
+}
+
+@media(max-width:768px){
+
+.skills-layout{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+}
 /* JOURNEY */
 
 .timeline-section{
