@@ -229,20 +229,6 @@ margin-bottom:20px;
 margin-top:10px;
 }
 
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-margin-top:30px;
-}
-
-.skills span{
-background:var(--card);
-padding:12px 18px;
-border-radius:50px;
-border:1px solid rgba(255,255,255,.06);
-}
-
 footer{
 padding:40px;
 text-align:center;
@@ -657,6 +643,10 @@ transform:translateY(-6px);
     grid-template-columns:1fr 1fr;
     gap:60px;
     margin-top:50px;
+}
+
+.skills-section{
+    width:100%;
 }
 
 .skill-group{
