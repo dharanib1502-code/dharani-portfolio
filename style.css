@@ -559,7 +559,7 @@ transform:translateY(-6px);
 /* RESULTS SECTION */
 
 .results-section{
-    padding:120px 0;
+   max-width:700px;
 }
 
 .results-section h2{
