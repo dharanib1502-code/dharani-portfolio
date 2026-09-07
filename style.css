@@ -703,3 +703,42 @@ transform:translateY(-6px);
     font-size:14px;
     line-height:1.5;
 }
+
+/* TOOLS USED SECTION */
+
+.tools-section{
+    margin-top:80px;
+    text-align:center;
+}
+
+.tools-title{
+    color:#22d3ee;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:30px;
+    font-weight:600;
+}
+
+.tools-row{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px;
+}
+
+.tool-tag{
+    padding:10px 18px;
+    border:1px solid rgba(139,92,246,.4);
+    border-radius:50px;
+    background:rgba(255,255,255,.02);
+    color:#fff;
+    font-size:14px;
+    transition:.3s;
+}
+
+.tool-tag:hover{
+    transform:translateY(-3px);
+    border-color:#8b5cf6;
+    box-shadow:0 0 18px rgba(139,92,246,.35);
+}
