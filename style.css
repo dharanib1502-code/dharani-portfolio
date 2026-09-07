@@ -309,21 +309,25 @@ transform:translateY(-6px);
 .journey-line{
     display:flex;
     justify-content:space-between;
-    align-items:flex-start;
     position:relative;
     margin-top:60px;
-    padding-top:20px;
     gap:20px;
 }
 
 .journey-line::before{
     content:'';
     position:absolute;
-    top:58px;
+    top:9px; /* center of 18px dot */
     left:0;
     width:100%;
     height:2px;
     background:rgba(255,255,255,.15);
+}
+
+.journey-item{
+    flex:1;
+    position:relative;
+    z-index:2;
 }
 
 .dot{
@@ -332,19 +336,12 @@ transform:translateY(-6px);
     background:#22d3ee;
     border-radius:50%;
     margin:0 auto;
-    position:relative;
-    top:-1px;
     box-shadow:0 0 15px #22d3ee;
-}
-.journey-item{
-    position:relative;
-    flex:1;
-    z-index:2;
 }
 
 .journey-item h3{
-    margin-top:0px;
-    margin-bottom:6px;
+    margin-top:16px; /* pushes year down */
+    margin-bottom:8px;
     font-size:18px;
     font-weight:700;
 }
