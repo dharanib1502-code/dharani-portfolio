@@ -1,3 +1,18 @@
+:root{
+  --bg:#070B1A;
+  --card:#0F1731;
+  --card2:#131D3F;
+  --primary:#8B5CF6;
+  --secondary:#06B6D4;
+  --text:#FFFFFF;
+  --text-light:#B8C1EC;
+  --border:#22305A;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
 .card,
 .service-card,
 .project-card,
