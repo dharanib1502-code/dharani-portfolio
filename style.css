@@ -319,7 +319,7 @@ transform:translateY(-6px);
 .journey-line::before{
     content:'';
     position:absolute;
-    top:28px;
+    top:68px;
     left:0;
     width:100%;
     height:2px;
