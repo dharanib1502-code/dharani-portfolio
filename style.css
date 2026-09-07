@@ -61,3 +61,135 @@ background:linear-gradient(
 #06B6D4
 );
 }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#070B1A;
+color:#fff;
+font-family:Inter,sans-serif;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+padding:80px 0;
+}
+
+.hero .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:50px;
+}
+
+.hero-left{
+flex:1;
+}
+
+.hero-right{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-right img{
+width:350px;
+border-radius:20px;
+border:2px solid #8B5CF6;
+}
+
+.hero h1{
+font-size:64px;
+line-height:1.1;
+margin:20px 0;
+}
+
+.hero p{
+color:#B8C1EC;
+margin-bottom:25px;
+}
+
+.badge{
+display:inline-block;
+padding:10px 20px;
+background:#131D3F;
+border:1px solid #8B5CF6;
+border-radius:50px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+}
+
+.btn-primary,
+.btn-secondary{
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+cursor:pointer;
+}
+
+.btn-primary{
+background:#8B5CF6;
+color:#fff;
+}
+
+.btn-secondary{
+border:1px solid #8B5CF6;
+color:#fff;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:40px 5%;
+}
+
+.stat{
+background:#0F1731;
+padding:25px;
+border-radius:16px;
+text-align:center;
+border:1px solid #22305A;
+}
+
+.stat h3{
+font-size:32px;
+color:#8B5CF6;
+}
+
+.about,
+.services,
+.portfolio,
+.experience,
+.education,
+.certifications,
+.skills,
+.metrics,
+.why-me,
+.testimonials,
+.contact{
+padding:80px 5%;
+}
+
+.services,
+.portfolio,
+.certifications,
+.metrics,
+.why-me,
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
