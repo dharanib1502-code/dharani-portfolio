@@ -560,8 +560,7 @@ transform:translateY(-6px);
 
 .results-section{
     width:100%;
-    max-width:1200px;
-    margin:0 auto;
+    max-width:100%;
 }
 
 .results-section h2{
